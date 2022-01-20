@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonGerekliKalori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GÜNLÜK GEREKLİ KALORİ"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#EC1616" />
+
+            <Button
+                android:id="@+id/buttonBazalMetabolizmaHizi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bazal Metabolizma Hızı"
+                android:textSize="18.5sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#EC1616"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="122dp" />
+
+            <Button
+                android:id="@+id/button1rm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1RM"
+                android:textSize="34sp"
+                android:textStyle="italic"
+                app:backgroundTint="#EC1616" />
+
+            <Button
+                android:id="@+id/buttonYagOrani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yağ Oranı"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                app:backgroundTint="#EC1616"
+                tools:layout_editor_absoluteX="75dp"
+                tools:layout_editor_absoluteY="137dp" />
+
+            <Button
+                android:id="@+id/buttonGunlukProtein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Günlük Protein"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#EC1616"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="98dp" />
+
+            <Button
+                android:id="@+id/buttonYagsizVucutKutlesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yağsız Vücut Kütlesi "
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#ED0C0C"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="65dp" />
+
+            <Button
+                android:id="@+id/buttonBmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#EC1616"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="150dp" />
+
+            <Button
+                android:id="@+id/buttonYagsizKitleIndeksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yağsız Kitle İndeksi - FFMI"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#EC0F0F"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
