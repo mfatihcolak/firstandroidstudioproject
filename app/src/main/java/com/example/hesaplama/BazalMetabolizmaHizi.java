@@ -30,7 +30,7 @@ public class BazalMetabolizmaHizi extends AppCompatActivity {
         sonuc_yazdir = findViewById(R.id.sonuc_yazdir);
         kadin = findViewById(R.id.kadin);
         erkek = findViewById(R.id.erkek);
-        radioGroup3 = findViewById(R.id.radioGroup3);
+
 
         hesapla_butonu.setOnClickListener(new View.OnClickListener() {
             @Override

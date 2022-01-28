@@ -4,106 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:background="@drawable/background_hesapla"
+
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button1rm"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="15dp"
+        android:text="1RM"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:backgroundTint="#EC1616"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/buttonYagsizKitleIndeksi"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="15dp"
+        android:text="Yağsız Kitle İndeksi - FFMI"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#EC0F0F"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGerekliKalori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGunlukProtein" />
 
-            <Button
-                android:id="@+id/buttonGerekliKalori"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GÜNLÜK GEREKLİ KALORİ"
-                android:textSize="24sp"
-                android:textStyle="bold|italic"
-                app:backgroundTint="#EC1616" />
+    <Button
+        android:id="@+id/buttonYagOrani"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="14dp"
+        android:text="Yağ Oranı"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:backgroundTint="#EC1616"
+        app:layout_constraintBottom_toTopOf="@+id/buttonYagsizVucutKutlesi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBazalMetabolizmaHizi" />
 
-            <Button
-                android:id="@+id/buttonBazalMetabolizmaHizi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bazal Metabolizma Hızı"
-                android:textSize="18.5sp"
-                android:textStyle="bold|italic"
-                app:backgroundTint="#EC1616"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:layout_editor_absoluteY="122dp" />
+    <Button
+        android:id="@+id/buttonGerekliKalori"
+        android:layout_width="349dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="95dp"
+        android:text="GÜNLÜK GEREKLİ KALORİ"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#EC1616"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYagsizKitleIndeksi" />
 
-            <Button
-                android:id="@+id/button1rm"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1RM"
-                android:textSize="34sp"
-                android:textStyle="italic"
-                app:backgroundTint="#EC1616" />
+    <Button
+        android:id="@+id/buttonBazalMetabolizmaHizi"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Bazal Metabolizma Hızı"
+        android:textSize="18.5sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#EC1616"
+        app:layout_constraintBottom_toTopOf="@+id/buttonYagOrani"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBmi" />
 
-            <Button
-                android:id="@+id/buttonYagOrani"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yağ Oranı"
-                android:textSize="24sp"
-                android:textStyle="italic"
-                app:backgroundTint="#EC1616"
-                tools:layout_editor_absoluteX="75dp"
-                tools:layout_editor_absoluteY="137dp" />
+    <Button
+        android:id="@+id/buttonYagsizVucutKutlesi"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="15dp"
+        android:text="Yağsız Vücut Kütlesi "
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#ED0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGunlukProtein"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYagOrani" />
 
-            <Button
-                android:id="@+id/buttonGunlukProtein"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                android:text="Günlük Protein"
-                android:textSize="24sp"
-                android:textStyle="bold|italic"
-                app:backgroundTint="#EC1616"
-                app:layout_constraintEnd_toEndOf="parent"
-                tools:layout_editor_absoluteY="98dp" />
+    <Button
+        android:id="@+id/buttonGunlukProtein"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="Günlük Protein"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#EC1616"
+        app:layout_constraintBottom_toTopOf="@+id/buttonYagsizKitleIndeksi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYagsizVucutKutlesi" />
 
-            <Button
-                android:id="@+id/buttonYagsizVucutKutlesi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yağsız Vücut Kütlesi "
-                android:textSize="20sp"
-                android:textStyle="bold|italic"
-                app:backgroundTint="#ED0C0C"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="65dp" />
-
-            <Button
-                android:id="@+id/buttonBmi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BMI"
-                android:textSize="24sp"
-                android:textStyle="bold|italic"
-                app:backgroundTint="#EC1616"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="150dp" />
-
-            <Button
-                android:id="@+id/buttonYagsizKitleIndeksi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yağsız Kitle İndeksi - FFMI"
-                android:textSize="20sp"
-                android:textStyle="bold|italic"
-                app:backgroundTint="#EC0F0F"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="80dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/buttonBmi"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:text="BMI"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#EC1616"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBazalMetabolizmaHizi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1rm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

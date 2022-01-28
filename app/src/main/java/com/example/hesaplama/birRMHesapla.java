@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class birRMHesapla extends AppCompatActivity {
 
     private Button buttonHesapla;
-    private EditText editTextAgirlikAlani, editTextTekrarAlani;
+    private EditText agirlikalani, tekraralani;
     private TextView textViewSonucAlani;
 
     @Override
@@ -20,16 +20,16 @@ public class birRMHesapla extends AppCompatActivity {
         setContentView(R.layout.activity_bir_rmhesapla);
 
         buttonHesapla = findViewById(R.id.buttonHesapla);
-        editTextAgirlikAlani = findViewById(R.id.editTextAgirlikAlani);
-        editTextTekrarAlani = findViewById(R.id.editTextTekrarAlani);
+        agirlikalani = findViewById(R.id.agirlikalani);
+        tekraralani = findViewById(R.id.tekraralani);
         textViewSonucAlani = findViewById(R.id.textViewSonucAlani);
 
         buttonHesapla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String gelenAgirlik = editTextAgirlikAlani.getText().toString();
-                String gelenTekrar = editTextTekrarAlani.getText().toString();
+                String gelenAgirlik = agirlikalani.getText().toString();
+                String gelenTekrar = tekraralani.getText().toString();
 
                 int agirlik = Integer.parseInt(gelenAgirlik);
                 int tekrar = Integer.parseInt(gelenTekrar);

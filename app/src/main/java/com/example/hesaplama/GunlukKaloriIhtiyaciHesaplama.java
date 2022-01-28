@@ -40,16 +40,16 @@ public class GunlukKaloriIhtiyaciHesaplama extends AppCompatActivity {
                 if(radioButtonsifir.isChecked()){
                     sonuc_kismi.setText(String.valueOf("Günlük almanız gereken kalori ortalama = " + (int)(bmh * 1.2) + " kaloridir."));
                 }
-                else if(radioButtonhafif.isChecked()){
+                if(radioButtonhafif.isChecked()){
                     sonuc_kismi.setText(String.valueOf("Günlük almanız gereken kalori ortalama = " + (int)(bmh * 1.375) + " kaloridir."));
                 }
-                else if(radioButtonorta.isChecked()){
+                if(radioButtonorta.isChecked()){
                     sonuc_kismi.setText(String.valueOf("Günlük almanız gereken kalori ortalama = " + (int)(bmh * 1.55) + " kaloridir."));
                 }
-                else if(radioButtonagir.isChecked()){
+                if(radioButtonagir.isChecked()){
                     sonuc_kismi.setText(String.valueOf("Günlük almanız gereken kalori ortalama = " + (int)(bmh * 1.725) + " kaloridir."));
                 }
-                else if(radioButtonagirinagiri.isChecked()){
+                if(radioButtonagirinagiri.isChecked()){
                     sonuc_kismi.setText(String.valueOf("Günlük almanız gereken kalori ortalama = " + (int)(bmh * 1.9) + " kaloridir."));
                 }
 

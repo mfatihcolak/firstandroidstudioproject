@@ -4,83 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEB3B"
+    android:background="@drawable/background_hesapla"
+    android:backgroundTint="#90FFFFFF"
+    android:backgroundTintMode="src_over"
     tools:context=".birRMHesapla">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="90dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:text="AĞIRLIK:"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextAgirlikAlani"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
-        android:ems="10"
-        android:hint="Ağırlık Giriniz"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="20dp"
-        android:text="TEKRAR:"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/editTextTekrarAlani"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
-        android:ems="10"
-        android:hint="Tekrar Giriniz"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAgirlikAlani" />
 
     <Button
         android:id="@+id/buttonHesapla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="39dp"
         android:text="HESAPLA"
         app:backgroundTint="#EA1010"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTekrarAlani" />
+        app:layout_constraintTop_toBottomOf="@+id/textinput2" />
 
     <TextView
         android:id="@+id/textViewSonucAlani"
-        android:layout_width="228dp"
-        android:layout_height="149dp"
-        android:layout_marginBottom="376dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="SONUÇ ALANI"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHesapla" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput1"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/agirlikalani"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Ağırlığı giriniz" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput2"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinput1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tekraralani"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Tekrar sayısını giriniz" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
